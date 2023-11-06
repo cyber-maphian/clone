@@ -19,5 +19,13 @@ def send():
     data.close()
     return "Submited successfully"
 
+@app.route('/see')
+def see():
+    data = open("store.txt","r")
+    
+    return data
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

